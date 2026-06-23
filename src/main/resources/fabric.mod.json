@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "xterme",
+	"version": "${version}",
+	"name": "Red Netherite",
+	"description": "The ultimate late-game upgrade with powerful weapons, armor, abilities and much more.",
+	"authors": [
+		"XTERME"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/xterme/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.xterme.RedNetherite"
+		],
+		"client": [
+			"com.xterme.client.RedNetheriteClient"
+		]
+	},
+	"mixins": [
+		"modid.mixins.json",
+		{
+			"config": "xterme.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
