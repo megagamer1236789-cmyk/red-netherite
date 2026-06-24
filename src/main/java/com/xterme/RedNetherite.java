@@ -2,6 +2,7 @@ package com.xterme;
 
 import com.xterme.item.RedNetheriteItems;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,12 +20,12 @@ public class RedNetherite implements ModInitializer {
         LOGGER.info(" Welcome XTERME!");
         LOGGER.info("==================================");
 
-        // REGISTER ITEMS
+        // Register items
         RedNetheriteItems.registerModItems();
     }
 
-    // helper for IDs
-    public static net.minecraft.resources.ResourceLocation id(String path) {
-        return new net.minecraft.resources.ResourceLocation(MOD_ID, path);
+    // Helper for IDs
+    public static Identifier id(String path) {
+        return Identifier.of(MOD_ID, path);
     }
 }
