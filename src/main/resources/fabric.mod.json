@@ -23,7 +23,7 @@
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"xterme.mixins.json",
 		{
 			"config": "xterme.client.mixins.json",
 			"environment": "client"
